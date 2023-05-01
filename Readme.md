@@ -4,7 +4,9 @@
 
 <p id="description">Hallo ich bin Nils Schlegel und das hier ist meine SPA viel spass!</p>
 
-<p align="center"><img src="https://img.shields.io/badge/<HTML>-<Used for the website structuring>-<COLOR>" alt="shields"><img src="https://img.shields.io/badge/CSS-Used%20to%20style%20the%20website-blue" alt="shields"><img src="https://img.shields.io/badge/JS-Used%20to%20animate%20the%20website-yellow" alt="shields"></p>
+<p align="center"><img src="https://img.shields.io/badge/<HTML>-<Used for the website structuring>-<COLOR>" alt="shields">
+  <img src="https://img.shields.io/badge/CSS-Used%20to%20style%20the%20website-blue" alt="shields">
+  <img src="https://img.shields.io/badge/JS-Used%20to%20animate%20the%20website-yellow" alt="shields"></p>
 
 <h2>🚀 Demo</h2>
 

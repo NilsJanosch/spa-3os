@@ -32,14 +32,25 @@
             <a href="#contact">Contact</a>
             <a onclick="changeStylesheet()">Change Stylesheet</a>
             <script>
-      function changeStylesheet() {
-        var stylesheet = document.getElementById("sheet");
-        if (stylesheet.href.endsWith("/css/style.css")) {
-          stylesheet.href = "/css/stylewhite.css";
-        } else {
-          stylesheet.href = "/css/style.css";
-        }
-      }
+function changeStylesheet() {
+  var stylesheet = document.getElementById("sheet");
+  var currentStylesheet = stylesheet.href;
+  var newStylesheet = currentStylesheet.endsWith("/css/style.css") ? "/css/stylewhite.css" : "/css/style.css";
+
+  // Save the new stylesheet in the browser's local storage
+  localStorage.setItem("stylesheet", newStylesheet);
+
+  // Apply the new stylesheet
+  stylesheet.href = newStylesheet;
+}
+
+// Check if there is a stored stylesheet in local storage and apply it
+var storedStylesheet = localStorage.getItem("stylesheet");
+if (storedStylesheet) {
+  var stylesheet = document.getElementById("sheet");
+  stylesheet.href = storedStylesheet;
+}
+
     </script>
         </nav>
     </header>
